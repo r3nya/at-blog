@@ -7,7 +7,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
-    './src/js/index.js'
+    './src/index.js',
+    'normalize.css'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -57,18 +58,15 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json'],
     alias: {
-      'js': path.join(__dirname, 'src/js'),
-      'style': path.join(__dirname, 'src/style'),
-      'img': path.join(__dirname, 'src/img'),
-      'api': path.join(__dirname, 'src/js/api'),
-      'store': path.join(__dirname, 'src/js/store'),
-      'utils': path.join(__dirname, 'src/js/utils'),
-      'actions': path.join(__dirname, 'src/js/actions'),
-      'reducers': path.join(__dirname, 'src/js/reducers'),
-      'selectors': path.join(__dirname, 'src/js/selectors'),
-      'constants': path.join(__dirname, 'src/js/constants'),
-      'containers': path.join(__dirname, 'src/js/containers'),
-      'components': path.join(__dirname, 'src/js/components'),
+      'api': path.join(__dirname, 'src/api'),
+      'store': path.join(__dirname, 'src/store'),
+      'utils': path.join(__dirname, 'src/utils'),
+      'actions': path.join(__dirname, 'src/actions'),
+      'reducers': path.join(__dirname, 'src/reducers'),
+      'selectors': path.join(__dirname, 'src/selectors'),
+      'constants': path.join(__dirname, 'src/constants'),
+      'containers': path.join(__dirname, 'src/containers'),
+      'components': path.join(__dirname, 'src/components'),
     }
   }
 };

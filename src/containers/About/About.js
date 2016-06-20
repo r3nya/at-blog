@@ -1,13 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class NotFoundPage extends Component {
+export default class About extends Component {
   static propTypes = {
 
   };
 
   render() {
     return (
-      <div>404!</div>
+      <div>About</div>
     );
   }
 }
