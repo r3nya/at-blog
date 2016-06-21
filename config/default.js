@@ -1,3 +1,3 @@
 module.exports = {
-  api: 'blablabla'
+  hipsterJesus: 'http://hipsterjesus.com/api/'
 };
