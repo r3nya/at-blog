@@ -1,13 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
+import styles from './NotFoundPage.css';
 
-export default class NotFoundPage extends Component {
-  static propTypes = {
-
-  };
-
-  render() {
-    return (
-      <div>404!</div>
-    );
-  }
-}
+export const NotFoundPage = () => (
+  <div className={styles.oops}>404! 😼</div>
+);

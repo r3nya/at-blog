@@ -1,25 +1,23 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import { Header, Footer } from 'containers/layout';
 import styles from './App.css';
 
-export default class App extends Component {
-  static propTypes = {
-    children: PropTypes.element.isRequired
-  };
+export const App = props => {
+  const { children } = props;
 
-  render() {
-    const { children } = this.props;
+  return (
+    <div className={styles.main}>
+      <Header />
 
-    return (
-      <div className={styles.main}>
-        <Header />
+      <section className={styles.content} role="main">
+        {children}
+      </section>
 
-        <section className={styles.content} role="main">
-          {children}
-        </section>
+      <Footer />
+    </div>
+  );
+};
 
-        <Footer />
-      </div>
-    );
-  }
-}
+App.propTypes = {
+  children: PropTypes.element.isRequired
+};

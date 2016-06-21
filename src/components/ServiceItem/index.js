@@ -1,1 +1,1 @@
-export default from './ServiceItem';
+export * from './ServiceItem';

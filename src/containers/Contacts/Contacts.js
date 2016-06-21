@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SimpleMap from 'components/SimpleMap';
+import { SimpleMap } from 'components/SimpleMap';
 import styles from './Contacts.css';
 
 export default class Contacts extends Component {

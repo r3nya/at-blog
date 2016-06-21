@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ServiceItem from 'components/ServiceItem';
+import { ServiceItem } from 'components/ServiceItem';
 import styles from './Services.css';
 
 export default class Services extends Component {

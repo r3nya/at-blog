@@ -7,7 +7,7 @@ import About from 'containers/About';
 import Services from 'containers/Services';
 import Contacts from 'containers/Contacts';
 
-import NotFoundPage from 'containers/NotFoundPage';
+import { NotFoundPage } from 'containers/NotFoundPage';
 
 export default (
   <Route>
