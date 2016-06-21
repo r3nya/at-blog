@@ -29,6 +29,11 @@ export default class About extends Component {
       <div className={styles.conteiner}>
         <Loader show={loading} />
         <article dangerouslySetInnerHTML={{ __html: text }}></article>
+        <section className={styles.faces}>
+          {Array.apply(null, { length: 5 }).map((item, i) =>
+            <img key={i} src="http://lorempixel.com/200/200/people/" alt="face" />
+          )}
+        </section>
       </div>
     );
   }
