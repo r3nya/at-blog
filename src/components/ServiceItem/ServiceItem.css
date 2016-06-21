@@ -1,0 +1,25 @@
+:local {
+  .colon {
+    align-items: center;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 280px;
+    padding-top: 2rem;
+
+    & i {
+      font-size: 4rem;
+    }
+
+    & h3 {
+      color: #39cc62;
+      font-size: 2rem;
+    }
+
+    & p {
+      color: #808080;
+      font-size: 1.2rem;
+    }
+  }
+}

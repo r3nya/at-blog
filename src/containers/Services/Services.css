@@ -1,0 +1,9 @@
+:local {
+  .wrapper {
+    background: rgba(124, 216, 150, 0.73);
+    display: flex;
+    justify-content: space-around;
+    height: calc(100% - 16rem);
+    padding-top: 8rem;
+  }
+}

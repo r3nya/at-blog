@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "clean": "rimraf lib dist coverage",
+    "clean": "rimraf dist",
     "lint": "eslint src test; true",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
@@ -67,6 +67,7 @@
     "2gis-maps-react": "0.0.2",
     "babel-polyfill": "^6.9.1",
     "classnames": "^2.2.5",
+    "font-awesome": "^4.6.3",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.13.1",
     "normalize.css": "^4.1.1",

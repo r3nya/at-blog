@@ -1,13 +1,36 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import ServiceItem from 'components/ServiceItem';
+import styles from './Services.css';
 
 export default class Services extends Component {
-  static propTypes = {
-
-  };
-
   render() {
+    const data = [
+      {
+        logo: 'fa-cube',
+        title: 'Design',
+        description: 'Awesome description 1'
+      },
+      {
+        logo: 'fa-qrcode',
+        title: 'Development',
+        description: 'Awesome description 2'
+      },
+      {
+        logo: 'fa-rocket',
+        title: 'SEO',
+        description: 'Awesome description 3'
+      }
+    ];
+
     return (
-      <div>Services</div>
+      <div className={styles.wrapper}>
+        {data.map((item, i) =>
+          <ServiceItem
+            key={i}
+            {...item}
+          />
+        )}
+      </div>
     );
   }
 }

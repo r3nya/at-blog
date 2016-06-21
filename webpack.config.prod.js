@@ -8,7 +8,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: [
     './src/index.js',
-    'normalize.css'
+    'normalize.css',
+    'font-awesome/css/font-awesome.min.css'
   ],
   output: {
     path: path.join(__dirname, 'dist'),

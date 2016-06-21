@@ -10,7 +10,8 @@ module.exports = {
   entry: [
     'webpack-hot-middleware/client',
     './src/index',
-    'normalize.css'
+    'normalize.css',
+    'font-awesome/css/font-awesome.min.css'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
